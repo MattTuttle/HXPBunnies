@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<meta title="HaxePunk" package="com.example.app" version="1.0.0" company="HaxePunk" />
+	<meta title="HXPBunnies" package="com.haxepunk.bunnymark" version="1.0.0" company="HaxePunk" />
 
- 	<app file="HaxePunk" main="Main" path="bin" />
+ 	<app file="HXPBunnies" main="Main" path="bin" />
 
 	<window fps="60" orientation="portrait" resizable="true" background="0x333333" hardware="true" />
 	<!--<window width="640" height="480" unless="mobile" />-->
@@ -11,7 +11,7 @@
 
 	<source path="src" />
 
-	<haxelib name="nme" />
+	<haxelib name="openfl" />
 	<haxelib name="HaxePunk" />
 
 	<assets path="assets/graphics" rename="gfx" include="*.png|*.jpg" />

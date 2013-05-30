@@ -1,7 +1,7 @@
 import com.haxepunk.Engine;
 import com.haxepunk.HXP;
-import nme.display.FPS;
-import nme.Lib;
+import openfl.display.FPS;
+import flash.Lib;
 
 class Main extends Engine
 {

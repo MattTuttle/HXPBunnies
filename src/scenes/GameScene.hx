@@ -11,7 +11,7 @@ import com.haxepunk.graphics.Backdrop;
 import com.haxepunk.masks.Grid;
 import com.haxepunk.utils.Input;
 import com.haxepunk.Scene;
-import nme.Lib;
+import flash.Lib;
 import entities.Bunny;
 
 class GameScene extends Scene
@@ -39,7 +39,7 @@ class GameScene extends Scene
 		#if flash
 		incBunnies = 50;
 		#else
-		incBunnies = 1000;
+		incBunnies = 100;
 		#end
 
 		numBunnies = incBunnies;
@@ -116,10 +116,6 @@ class GameScene extends Scene
 
 	private function addSomeBunnies():Void
 	{
-		if (numBunnies >= 1500)
-		{
-			incBunnies = 250;
-		}
 		var more:Int = numBunnies + incBunnies;
 		addBunnies(more - numBunnies);
 		overlayText.text = "numBunnies = " + numBunnies;

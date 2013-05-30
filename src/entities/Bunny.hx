@@ -3,7 +3,7 @@ package entities;
 import com.haxepunk.Entity;
 import com.haxepunk.HXP;
 import com.haxepunk.graphics.Image;
-import nme.geom.Point;
+import flash.geom.Point;
 
 /**
  * ...
