@@ -3,6 +3,7 @@ package entities;
 import com.haxepunk.Entity;
 import com.haxepunk.HXP;
 import com.haxepunk.graphics.Image;
+import com.haxepunk.Graphic;
 import flash.geom.Point;
 
 /**
@@ -14,7 +15,7 @@ class BunnyImage extends Image
 	public var velocity:Point;
 	public var angularVelocity:Float;
 
-	public function new(graphic:Dynamic)
+	public function new(graphic:ImageType)
 	{
 		super(graphic);
 

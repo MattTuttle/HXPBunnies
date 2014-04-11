@@ -78,9 +78,10 @@ class GameScene extends Scene
 
 	private function addBunnies(numToAdd:Int):Void
 	{
+		var image = #if flash "gfx/wabbit_alpha.png" #else atlas.getRegion("bunny.png") #end;
 		for (i in 0...(numToAdd))
 		{
-			bunnyImage = new BunnyImage(#if flash "gfx/wabbit_alpha.png" #else atlas.getRegion("bunny.png") #end);
+			bunnyImage = new BunnyImage(image);
 			bunnyImage.x = HXP.width * Math.random();
 			bunnyImage.y = HXP.height * Math.random();
 			bunnyImage.velocity.x = 50 * (Math.random() * 5) * (Math.random() < 0.5 ? 1 : -1);
